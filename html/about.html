@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daily Delights - About</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/about_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="bdy">
+    <div onclick="goUp()" id="home_button" class="home-button">
+      <!-- <a href="#bdy">^</a> -->
+      UP
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar-element">
+      <div class="navbar-default card-wrapper">
+        <div class="navbar-left">
+          <h1>Daily Delights</h1>
+        </div>
+        <div class="navbar-right">
+          <a href="main.html" type="button" class="navbar-right-button nrbm"
+            >Home</a
+          >
+          <a href="shop.html" type="button" class="navbar-right-button nrbs"
+            >Shop</a
+          >
+          <a href="product.html" type="button" class="navbar-right-button nrbp"
+            >Product</a
+          >
+          <a href="about.html" type="button" class="navbar-right-button nrba"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- END -->
+
+    <!-- RESPONSIVE NAVBAR -->
+    <nav class="navbar-responsive">
+      <div class="navbar-responsive-default">
+        <div onclick="lightMode()" class="navbar-responsive-inner-logo">
+          <img src="../assets/sun.png" alt="Light mode" />
+        </div>
+
+        <div class="navbar-responsive-heading">
+          <h1 onclick="mainControlResponsive()">Daily Delights</h1>
+        </div>
+
+        <div
+          onclick="darkMode()"
+          class="navbar-responsive-inner-logo navbar-responsive-inner-right"
+        >
+          <img src="../assets/moon.png" alt="Dark mode" />
+        </div>
+      </div>
+      <!-- SUB NAVBAR -->
+      <div id="navbar_responsive_inner" class="navbar-responsive-inner">
+        <div class="navbar-responsive-inner-link">
+          <a href="main.html" class="navbar-responsive-inner-link-btn">Home</a>
+          <a href="product.html" class="navbar-responsive-inner-link-btn"
+            >Product</a
+          >
+          <a href="shop.html" class="navbar-responsive-inner-link-btn">Shop</a>
+        </div>
+      </div>
+    </nav>
+    <!-- END -->
+
+    <section class="section-body-ctn">
+      <!-- SECTION 1 -->
+      <section class="section-about-contact">
+        <h1>CONTACT SECTION</h1>
+      </section>
+      <!-- END -->
+
+      <!-- SECTION 2 -->
+      <section class="section-a-contact" id="sec_ctn">
+        <div class="section-a-contact-heading card-wrapper">
+          <div class="section-a-form">
+            <div class="section-a-form-name section-f-wrapper">
+              <div class="section-a-form-fname section-a-form-card">
+                <h3>First name</h3>
+                <input
+                  id="fname"
+                  type="text"
+                  name="First name"
+                  placeholder="Jane"
+                />
+              </div>
+
+              <div class="section-a-form-lname section-a-form-card">
+                <h3>Last name</h3>
+                <input
+                  id="lname"
+                  type="text"
+                  name="Last name"
+                  placeholder="Smith"
+                />
+              </div>
+            </div>
+
+            <div
+              class="section-a-form-email section-f-wrapper section-a-form-card"
+            >
+              <h3>Email</h3>
+              <input
+                id="fmail"
+                type="email"
+                name="Email"
+                placeholder="email@janesmith.com"
+              />
+            </div>
+
+            <div
+              class="section-a-form-message section-f-wrapper section-a-form-card"
+            >
+              <h3>Message</h3>
+              <textarea
+                id="fmessage"
+                class="section-a-textarea section-f-wrapper"
+                placeholder="Enter your question or message"
+                maxlength="5000"
+              ></textarea>
+            </div>
+
+            <div class="section-a-form-button-ctn section-f-wrapper">
+              <button onclick="getInfo()" type="submit" name="Send information">
+                SEND
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END -->
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-a-element">
+      <div class="footer-a-container">
+        <div class="footer-a-inner footer-f-wrapper">
+          <div class="footer-a-content-left">
+            <div class="footer-a-content-heading">
+              <h1>Daily Delights</h1>
+            </div>
+            <div class="footer-a-content-logo">
+              <img src="../assets/facebook.png" alt="Facebook logo button" />
+              <img src="../assets/linkedin.png" alt="Linkedin logo button" />
+              <img src="../assets/youtube.png" alt="Youtube logo button" />
+              <img src="../assets/instagram.png" alt="Instagram logo button" />
+            </div>
+          </div>
+
+          <div class="footer-a-content-sec">
+            <div class="footer-a-content-center">
+              <h3>Copyright 2024 © Anghel Alexandru</h3>
+            </div>
+            <div class="footer-a-content-right">
+              <h3>Thank you for your time!</h3>
+              <h3>0768066599</h3>
+              <h4>alex.alexandru86@yahoo.ro</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

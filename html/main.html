@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daily Delights - Home</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="bdy">
+    <div id="home_button_remote_ctc" class="home-button-remote-ctc">
+      <div onclick="goUp()" id="home_button" class="home-button">
+        <!-- <a href="#bdy">^</a> -->
+        UP
+      </div>
+
+      <div id="cart_button" class="cart-button">
+        <div id="cart_button_inner_ctc" class="cart-button-inner_ctc">0</div>
+        <img src="../assets/carts.png" alt="Shopping cart button" />
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-element">
+      <div class="navbar-default card-wrapper">
+        <div class="navbar-left">
+          <h1>Daily Delights</h1>
+        </div>
+        <div class="navbar-right">
+          <a href="main.html" class="navbar-right-button nrbm">Home</a>
+          <a href="shop.html" class="navbar-right-button nrbs">Shop</a>
+          <a href="product.html" class="navbar-right-button nrbp">Product</a>
+          <a href="about.html" class="navbar-right-button nrba">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- RESPONSIVE NAVBAR -->
+    <nav class="navbar-responsive">
+      <div class="navbar-responsive-default">
+        <div onclick="lightMode()" class="navbar-responsive-inner-logo">
+          <img src="../assets/sun.png" alt="Light mode" />
+        </div>
+
+        <div class="navbar-responsive-heading">
+          <h1 onclick="mainControlResponsive()">Daily Delights</h1>
+        </div>
+
+        <div
+          onclick="darkMode()"
+          class="navbar-responsive-inner-logo navbar-responsive-inner-right"
+        >
+          <img src="../assets/moon.png" alt="Dark mode" />
+        </div>
+      </div>
+      <!-- SUB NAVBAR -->
+      <div id="navbar_responsive_inner" class="navbar-responsive-inner">
+        <div class="navbar-responsive-inner-link">
+          <a href="shop.html" class="navbar-responsive-inner-link-btn">Shop</a>
+          <a href="product.html" class="navbar-responsive-inner-link-btn"
+            >Product</a
+          >
+          <a href="about.html" class="navbar-responsive-inner-link-btn"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-f1-element">
+      <div class="section-heading-default">
+        <div class="section-heading-title">
+          <h1>Your Shop</h1>
+        </div>
+        <div class="section-heading-content">
+          <p>
+            "<mark><em>Every bite tells a story</em></mark
+            >—share your feedback and help us create unforgettable meals!"
+          </p>
+        </div>
+        <div class="section-heading-button">
+          <div class="section-heading-ctn-btn">
+            <a href="about.html#sec_ctn" type="button">Feedback</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading-image">
+        <img src="../assets/food-background-1.jpg" />
+      </div>
+    </section>
+
+    <section class="section-f2-element">
+      <div class="section-f2-title card-wrapper">
+        <h1>Favorite wines</h1>
+      </div>
+
+      <div class="section-f2-cards card-wrapper">
+        <div class="section-f2-card section-f2-card-1">
+          <img src="../assets/red_wine.png" />
+          <h3>Jacob's Creek</h3>
+          <p>
+            Jacob's Creek Red is an Australian red wine with intense aromas of
+            red fruits such as cherries and plums, complemented by subtle notes
+            of vanilla. With a medium body and a velvety texture, this wine
+            offers a pleasant and balanced taste, making it ideal to be enjoyed
+            with red meat or pasta.
+          </p>
+          <div class="section-f2-card-button-ctn">
+            <button class="section-f2-card-btn" type="button">ORDER</button>
+          </div>
+        </div>
+
+        <div class="section-f2-card section-f2-card-2">
+          <img src="../assets/Sweet_Serengeti.png" />
+          <h3>Serengeti - Red</h3>
+          <p>
+            Serengeti Sweet Red is a sweet red wine with rich aromas of red
+            fruits such as strawberries and raspberries. With a pleasant
+            sweetness and balanced acidity, this wine is ideal to be enjoyed
+            alone or with desserts and light cheeses, offering an accessible and
+            enjoyable tasting experience.
+          </p>
+          <div class="section-f2-card-button-ctn">
+            <button class="section-f2-card-btn" type="button">ORDER</button>
+          </div>
+        </div>
+
+        <div class="section-f2-card section-f2-card-3">
+          <img src="../assets/white_wine.png" />
+          <h3>Oliver - Gold</h3>
+          <p>
+            Oliver Sweet White is a sweet white wine, known for its delicious
+            aromas of tropical fruits such as peaches and pineapple. With a
+            delicate sweetness and well-balanced acidity, this wine is perfect
+            to be enjoyed with appetizers, salads or desserts, offering a
+            refined and fresh experience.
+          </p>
+          <div class="section-f2-card-button-ctn">
+            <button class="section-f2-card-btn" type="button">ORDER</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-f3-element">
+      <div class="section-f3-title card-wrapper">
+        <h1>Favorite mixes</h1>
+      </div>
+
+      <div class="section-f3-cards"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-a-element">
+      <div class="footer-a-container">
+        <div class="footer-a-inner footer-f-wrapper">
+          <div class="footer-a-content-left">
+            <div class="footer-a-content-heading">
+              <h1>Daily Delights</h1>
+            </div>
+            <div class="footer-a-content-logo">
+              <img src="../assets/facebook.png" alt="Facebook logo button" />
+              <img src="../assets/linkedin.png" alt="Linkedin logo button" />
+              <img src="../assets/youtube.png" alt="Youtube logo button" />
+              <img src="../assets/instagram.png" alt="Instagram logo button" />
+            </div>
+          </div>
+
+          <div class="footer-a-content-sec">
+            <div class="footer-a-content-center">
+              <h3>Copyright 2024 © Anghel Alexandru</h3>
+            </div>
+            <div class="footer-a-content-right">
+              <h3>Thank you for your time!</h3>
+              <h3>0768066599</h3>
+              <h4>alex.alexandru86@yahoo.ro</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js" defer></script>
+  </body>
+</html>

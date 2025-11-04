@@ -1,0 +1,48 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card-wrapper {
+  margin: 0 70px 0 70px;
+}
+
+.navbar-default {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.navbar-left h1 {
+  font-size: 30px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar-right-button {
+  width: 80px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  padding: 2px 2px;
+}
+
+.nrbp {
+  background-color: black;
+  color: white;
+}
